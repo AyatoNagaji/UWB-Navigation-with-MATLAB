@@ -26,7 +26,7 @@ t3=MYtimeerror2(3,10,t3_real,len);
 
 x=zeros(1,len); y=zeros(1,len);
 %測位
-parfor i=1:len
+for i=1:len
     [x(1,i),y(1,i)]=MYTOA(t1(1,i),t2(1,i),t3(1,i),sensor1_x,sensor1_y,sensor2_x,sensor2_y,sensor3_x,sensor3_y);
 end
 
@@ -67,7 +67,7 @@ for k=1:100
     x_min=zeros(1,len); y_min=zeros(1,len);
 
     %測位
-    parfor i=min_check:max_check
+    for i=min_check:max_check
         [x_min(1,i),y_min(1,i)]=MYTOA(t1_min(1,i),t2_min(1,i),t3_min(1,i),sensor1_x,sensor1_y,sensor2_x,sensor2_y,sensor3_x,sensor3_y);
     end
 
