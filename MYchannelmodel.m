@@ -47,11 +47,11 @@ h=h.';
 % channel energy
 %channel_energy = sum(abs(h).^2);
 
-figure(1); 
-plot(t*1E9,h);
-grid on
-title('Impulse response realizations')
-xlabel('Time (nS)')
+%figure(1); 
+%plot(t*1E9,h);
+%grid on
+%title('Impulse response realizations')
+%xlabel('Time (nS)')
 
 %figure(2)
 %plot(0,abs(h(1,:)),'o');
