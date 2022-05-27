@@ -4,7 +4,7 @@ function[check_time]=MYtimeerror2(cm_num,snr,u,u_len)
 [ts,s]=MYuwb_pulse2(u,u_len);
 
 check_time=zeros(1,u_len);
-parfor i=1:u_len
+for i=1:u_len
 [h_t,h]=MYchannelmodel(cm_num);
 %h(1,1:500)=0; h(1,2)=1; %理想のチャネル応答
 conv_len=length(s(i,:))+length(h)-1;
